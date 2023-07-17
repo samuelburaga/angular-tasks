@@ -6,5 +6,5 @@ import { Component } from "@angular/core";
 	styleUrls: ["./list.component.css"],
 })
 export class ListComponent {
-	list: string[] = ["Valentina", "Elisei", "Sami", "Darian"];
+	students: string[] = ["Valentina", "Elisei", "Sami", "Darian"];
 }
