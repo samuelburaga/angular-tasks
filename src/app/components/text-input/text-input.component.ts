@@ -14,6 +14,11 @@ export class TextInputComponent {
 		this.isDisabled = false;
 	}
 
+	disable() {
+		this.isDisabled = true;
+		this.message = "";
+	}
+
 	printMessage() {
 		this.message = this.Name;
 	}
