@@ -8,14 +8,17 @@ import { Component } from "@angular/core";
 export class ListComponent {
 	students: string[] = [];
 	status: string = "Show";
+
 	changeStatus() {
 		if (this.status == "Show") this.show();
 		else this.hide();
 	}
+
 	show() {
 		this.status = "Hide";
 		this.students = ["Valentina", "Elisei", "Sami", "Darian"];
 	}
+
 	hide() {
 		this.status = "Show";
 		this.students = [];
