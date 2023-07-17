@@ -7,8 +7,15 @@ import { Component } from "@angular/core";
 })
 export class TextInputComponent {
 	Name: string = "";
-	message: string = "";
+	message: string = "Greetings,";
+
 	enable() {
 		(<HTMLInputElement>document.getElementById("input")).disabled = false;
+	}
+
+	printMessage() {
+		console.log("print message");
+		this.Name = (<HTMLInputElement>document.getElementById("input")).value;
+		this.message = "Greetings, " + this.Name;
 	}
 }
