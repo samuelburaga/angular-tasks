@@ -1,6 +1,6 @@
-<ol>
+<ol [hidden]="hidden">
 	<li *ngFor="let student of students">
 		{{ student }}
 	</li>
 </ol>
-<button (click)="changeStatus()">{{ status }}</button>
+<button (click)="changeStatus()">{{ hidden === true ? "Show" : "Hide" }}</button>

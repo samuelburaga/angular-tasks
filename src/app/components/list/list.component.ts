@@ -6,21 +6,22 @@ import { Component } from "@angular/core";
 	styleUrls: ["./list.component.css"],
 })
 export class ListComponent {
-	students: string[] = [];
-	status: string = "Show";
+	students: string[] = ["Valentina", "Elisei", "Sami", "Darian"];
+	hidden: boolean = false;
 
 	changeStatus() {
-		if (this.status == "Show") this.show();
-		else this.hide();
+		if (this.hidden === true) {
+			this.show();
+		} else {
+			this.hide();
+		}
 	}
 
 	show() {
-		this.status = "Hide";
-		this.students = ["Valentina", "Elisei", "Sami", "Darian"];
+		this.hidden = false;
 	}
 
 	hide() {
-		this.status = "Show";
-		this.students = [];
+		this.hidden = true;
 	}
 }
