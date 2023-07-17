@@ -14,7 +14,6 @@ export class TextInputComponent {
 	}
 
 	printMessage() {
-		console.log("print message");
 		this.Name = (<HTMLInputElement>document.getElementById("input")).value;
 		this.message = "Greetings, " + this.Name;
 	}
