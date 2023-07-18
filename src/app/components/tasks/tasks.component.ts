@@ -7,4 +7,9 @@ import { Component, Input } from "@angular/core";
 })
 export class TasksComponent {
 	tasks: string[] = ["Buy milk", "Solve the Rubiks'cube", "Take a break"];
+
+	deleteTask(event: any) {
+		let index = event.indexOf(event);
+		this.tasks.splice(index, 1);
+	}
 }
