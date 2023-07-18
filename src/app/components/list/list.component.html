@@ -1,5 +1,5 @@
 <ol class="names" *ngIf="isVisible">
-	<li *ngFor="let student of students" [ngClass]="{ myClass: student === 'Sami' }">
+	<li *ngFor="let student of students" [ngClass]="{ 'my-name': student === 'Sami' }">
 		{{ student }}
 	</li>
 </ol>
