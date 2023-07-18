@@ -1,5 +1,10 @@
 <ol class="names" *ngIf="!isHidden">
-	<li *ngFor="let student of students" [ngStyle]="{ color: isMe(student) ? 'red' : 'black' }">
+	<li
+		*ngFor="let student of students"
+		[ngStyle]="
+			student === 'Sami' ? { color: 'red', 'font-weight': 'bold' } : { color: 'black', 'font-weight': 'normal' }
+		"
+	>
 		{{ student }}
 	</li>
 </ol>
