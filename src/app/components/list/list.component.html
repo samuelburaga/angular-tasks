@@ -1,0 +1,6 @@
+<ol class="names" *ngIf="isVisible">
+	<li *ngFor="let student of students" [ngClass]="{ myClass: student === 'Sami' }">
+		{{ student }}
+	</li>
+</ol>
+<button (click)="changeStatus()">{{ isVisible ? "Show" : "Hide" }}</button>
