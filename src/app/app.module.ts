@@ -7,8 +7,8 @@ import { TextInputComponent } from "./components/text-input/text-input.component
 
 import { FormsModule } from "@angular/forms";
 import { ListComponent } from "./components/list/list.component";
-import { TasksComponent } from './components/tasks/tasks.component';
-import { CardComponent } from './components/tasks/card/card.component';
+import { TasksComponent } from "./components/tasks/tasks.component";
+import { CardComponent } from "./components/tasks/card/card.component";
 
 @NgModule({
 	declarations: [AppComponent, ButtonComponent, TextInputComponent, ListComponent, TasksComponent, CardComponent],
