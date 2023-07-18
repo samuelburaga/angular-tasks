@@ -6,11 +6,10 @@ import { ButtonComponent } from "./components/button/button.component";
 import { TextInputComponent } from "./components/text-input/text-input.component";
 
 import { FormsModule } from "@angular/forms";
-import { ListComponent } from './components/list/list.component';
-import { NameComponent } from './components/name/name.component';
+import { ListComponent } from "./components/list/list.component";
 
 @NgModule({
-	declarations: [AppComponent, ButtonComponent, TextInputComponent, ListComponent, NameComponent],
+	declarations: [AppComponent, ButtonComponent, TextInputComponent, ListComponent],
 	imports: [BrowserModule, FormsModule],
 	providers: [],
 	bootstrap: [AppComponent],
