@@ -6,5 +6,6 @@ import { Component, Input } from "@angular/core";
 	styleUrls: ["./card.component.css"],
 })
 export class CardComponent {
-	@Input() task: string = "";
+	@Input()
+	text: string = "";
 }
