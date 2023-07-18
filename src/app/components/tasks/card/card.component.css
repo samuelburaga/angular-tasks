@@ -1,12 +1,16 @@
 .delete-button {
 	color: white;
-	font-size: 50px;
+	font-size: 20px;
 	background-color: red;
-	width: 200px;
-	height: 100px;
+	width: 70px;
+	height: 30px;
+	margin-top: 7.5px;
 }
 
 p {
-	float: left;
 	margin-right: 20px;
+}
+
+.task {
+	display: flex;
 }
