@@ -12,7 +12,7 @@ export class CardComponent {
 	@Output()
 	delete: EventEmitter<number> = new EventEmitter<number>();
 
-	deleteTask() {
+	handleClickDelete() {
 		this.delete.emit(this.task.id);
 	}
 }

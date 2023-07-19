@@ -14,7 +14,7 @@ export class TasksComponent {
 	];
 
 	deleteTask(event: any) {
-		let index: number = this.taskList.findIndex((task) => task.id === event);
+		const index: number = this.taskList.findIndex((task) => task.id === event);
 		this.taskList.splice(index, 1);
 	}
 }
