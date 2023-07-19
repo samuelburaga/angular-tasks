@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from "@angular/core";
-
+import { Task } from "../task";
 @Component({
 	selector: "app-card",
 	templateUrl: "./card.component.html",
@@ -7,12 +7,12 @@ import { Component, EventEmitter, Input, Output } from "@angular/core";
 })
 export class CardComponent {
 	@Input()
-	text: string = "";
+	task: Task = { id: -1, text: "" };
 
 	@Output()
-	delete: EventEmitter<string> = new EventEmitter<string>();
+	delete: EventEmitter<number> = new EventEmitter<number>();
 
 	deleteTask() {
-		this.delete.emit(this.text);
+		this.delete.emit(this.task.id);
 	}
 }

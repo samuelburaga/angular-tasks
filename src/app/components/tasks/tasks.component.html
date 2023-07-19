@@ -1,1 +1,1 @@
-<app-card *ngFor="let newTask of tasks" [text]="newTask" (delete)="deleteTask($event)"></app-card>
+<app-card *ngFor="let newTask of taskList" [task]="newTask" (delete)="deleteTask($event)"></app-card>
