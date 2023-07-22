@@ -24,6 +24,10 @@ git clone https://github.com/samuelburaga/dogs.git
 
 5. Run "ng serve" or "ng s" in the terminal in the root folder of the project and open the link shown in the command line with a browser like Chrome (Example: localhost:4200)
 
+> ## Usage
+
+The application contains a single page with suggestive content regarding each task solved.
+
 > ## Tools used
 
 -   Visual Studio Code - code editor redefined and optimized for building and debugging modern web and cloud applications.
