@@ -60,3 +60,11 @@ These were the tasks:
 
 *   Prettier - an opinionated code formatter
     <br clear = "all"><img src = "https://brandslogos.com/wp-content/uploads/images/large/prettier-logo.png" width = "12%" height = "12%">
+
+<details>
+
+<summary>Demo</summary>
+
+![Demo](res/demo.png)
+
+</details>
